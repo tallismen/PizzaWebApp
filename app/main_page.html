@@ -1,0 +1,33 @@
+<div ng-controller="restaurantController">
+    <p>Toevoegen pizzas: <input type="checkbox" ng-model="checked" aria-label="Toggle ngShow"><br/>
+    <div class="check-element animate-show-hide" ng-show="checked">
+        <input type="text" placeholder="naam" ng-model="pizzaNaam">
+        <input type="number" placeholder="prijs" ng-model="pizzaPrijs">
+        <input type="number" placeholder="calorien" ng-model="pizzaCalorien">
+        <button ng-click="addPizza()" class="btn btn-primary">Toevoegen aan lijst</button>
+    </div>
+    <h2>Alle {{getPizzasLenght()}} pizza's</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Pizza</th>
+            <th>Prijs</th>
+            <th>Calorien</th>
+            <th></th>
+            <th>Details</th>
+        </tr>
+        <tr ng-repeat="x in Pizzas">
+            <td>{{x.naam}}</td>
+            <td>&euro;{{x.prijs}}</td>
+            <td>{{x.calorien}}</td>
+            <td>
+                <button ng-click="bestel($index)" class="btn btn-success">
+                    Bestel
+                </button>
+            </td>
+            <td><a class="btn btn-primary" href="#/pizza_detail/{{$index}}"> detail</a></td>
+        </tr>
+    </table>
+    <a class="btn btn-success" href="#/besteld">Naar bestel pagina</a>
+</div>
+</div>
+</p>

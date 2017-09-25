@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="index.js"></script>
+    <script src="services.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="freelancer.min.css" rel="stylesheet">
+</head>
+<body ng-app="restaurant" id="page-top" class="index" style="background-color: #f2f2f2">
+<div class="container" id="maincontent" tabindex="-1"
+     style="background-color: #FFFFFF;margin-top: 50px; border-radius: 15px; border: 2px solid black">
+
+    <div ng-init="naam='Vul naam in'">
+        <h1>{{ naam }}'s pizza Restaurant</h1>
+        <p>Naam van restaurant: <input type="text" ng-model="naam"></p>
+
+    </div>
+    <div ng-view></div>
+</div>
+</body>
+</html>

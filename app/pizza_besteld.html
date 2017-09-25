@@ -1,0 +1,33 @@
+<h2>{{getBesteldPizzasLenght()}} Bestelde pizza's</h2>
+<table class="table table-striped">
+    <tr>
+        <th>Pizza</th>
+        <th>Prijs</th>
+        <th>Calorien</th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="besteld in PizzasBesteld track by $index">
+        <td>{{besteld.naam}}</td>
+        <td>&euro;{{besteld.prijs}}</td>
+        <td>{{besteld.calorien}}</td>
+        <td>
+            <button ng-click="bestelregelWissen($index)" class="btn btn-warning">
+                Delete
+            </button>
+        </td>
+    </tr>
+</table>
+<table class="table" style="width: 25%">
+    <tr>
+        <td><b>Totaalprijs:</b></td>
+        <td>&euro;{{totaalPrijs()}}</td>
+    </tr>
+    <tr>
+        <td><b>TotaalCalorien:</b></td>
+        <td>{{totaalCalorien()}}</td>
+    </tr>
+</table>
+<a class="btn btn-success" href="#/index">Terug</a>
+<button ng-click="bestellingLeegmaken()" class="btn btn-danger">
+    Bestelling wissen
+</button>

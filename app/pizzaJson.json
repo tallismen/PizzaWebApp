@@ -1,0 +1,28 @@
+{
+  "pizzas": [
+    {
+      "naam": "calzone",
+      "prijs": "17",
+      "calorien": "250",
+      "bestelling": "0"
+    },
+    {
+      "naam": "kebab",
+      "prijs": "35",
+      "calorien": "500",
+      "bestelling": "0"
+    },
+    {
+      "naam": "hawaiii",
+      "prijs": "25",
+      "calorien": "750",
+      "bestelling": "0"
+    },
+    {
+      "naam": "Salami",
+      "prijs": "15",
+      "calorien": "380",
+      "bestelling": "0"
+    }
+  ]
+}

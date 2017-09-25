@@ -1,0 +1,42 @@
+[
+  {
+    "0": "12",
+    "id": "12",
+    "1": "Betriebsbuchhaltung",
+    "name": "Betriebsbuchhaltung",
+    "2": "2016-10-19 15:44:16",
+    "timestamp": "2016-10-19 15:44:16"
+  },
+  {
+    "0": "13",
+    "id": "13",
+    "1": "Datenbanken",
+    "name": "Datenbanken",
+    "2": "2016-10-28 20:35:49",
+    "timestamp": "2016-10-28 20:35:49"
+  },
+  {
+    "0": "6",
+    "id": "6",
+    "1": "Logistik",
+    "name": "Logistik",
+    "2": "0000-00-00 00:00:00",
+    "timestamp": "0000-00-00 00:00:00"
+  },
+  {
+    "0": "14",
+    "id": "14",
+    "1": "Statistik",
+    "name": "Statistik",
+    "2": "2016-11-02 15:13:13",
+    "timestamp": "2016-11-02 15:13:13"
+  },
+  {
+    "0": "1",
+    "id": "1",
+    "1": "System Engineering",
+    "name": "System Engineering",
+    "2": "0000-00-00 00:00:00",
+    "timestamp": "0000-00-00 00:00:00"
+  }
+]
