@@ -14,13 +14,13 @@ describe('my app', function() {
   describe('index', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/index');
+      browser.get('#/index');
     });
 
 
     it('should render index when user navigates to /index', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/Vul naam in/);
+        toMatch(/index pagina/);
     });
 
   });
@@ -29,7 +29,7 @@ describe('my app', function() {
   describe('besteld', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/besteld');
+      browser.get('#/besteld');
     });
 
 
