@@ -71,7 +71,15 @@ app.controller("restaurantController", function ($scope, $http, dataService) {
         $http.get("pizzaJson.json").then(function (response) {
             $scope.Pizzas = response.data.pizzas;
             dataService.setPizzas($scope.Pizzas);
+            $scope.status = response.status;
         });
+
+        $scope.httpJsonGet = function () {
+            $http.get("pizzaJson.json").then(function (response) {
+                $scope.Pizzas = response.data.pizzas;
+                dataService.setPizzas($scope.Pizzas);
+            });
+        }
 
         $scope.addPizza = function () {
             $scope.Pizzas.push({
